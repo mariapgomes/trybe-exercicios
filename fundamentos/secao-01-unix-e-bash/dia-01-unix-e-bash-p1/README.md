@@ -1,0 +1,1 @@
+Esse foi o primeiro dia de conteúdo na Trybe, nele aprendi sobre a história do unix, como ele funciona e como interagir com ele através do Bash. Nessa aula fui capaz de manipular arquivos e diretórios, navegar entre eles e realizar buscas através dos comandos executados no shell.
