@@ -1,0 +1,1 @@
+Aqui foi onde dei meus primeiros passos no git aprendendo sobre versionamentos, comandos e colocando em prática de forma local os aprendizados do dia juntamente com os dos dias anteriores.
