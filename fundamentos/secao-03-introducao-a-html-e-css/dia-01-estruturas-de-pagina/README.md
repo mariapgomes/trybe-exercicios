@@ -1,0 +1,1 @@
+Nessa aula tive meu primeiro contato com o HTML, aprendi sobre as principais tags para a estruturação de uma página web e fiz exercícios de prática para fixação incluindo a estrutura inicial de um portifólio.
