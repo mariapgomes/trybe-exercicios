@@ -3,12 +3,10 @@ div:hover {
 }
 div:nth-of-type(1) {
     background-color:red;
-    font-style: italic;
 }
 
 div:nth-of-type(2) {
     background-color:purple;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 div:nth-of-type(3) {
@@ -27,11 +25,11 @@ div:nth-of-type(5) {
 /* Para que as duas configurações aconteçam de forma correta, tem que reescrever a div e colocar a estilização referente ao texto de h3 contido na nela, caso contrário todo tipo de texto que estiver dentro da div será formatado da mesma forma. */
 
 div:nth-of-type(1) > h3 {
-    font-style: italic;
+    text-transform: uppercase;
 }
 
 div:nth-of-type(2) > h3 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace;
 }
 
 div:nth-of-type(3) > h3 {
@@ -45,4 +43,10 @@ div:nth-of-type(4) > h3 {
 
 div:nth-of-type(5) > h3 {
     text-decoration:underline
+}
+
+/* (2n+1) e (1n+2) também funcionam porque marcam como um sim um não, no caso de marcar os pares é só marcar um não e um sim*/
+
+div:nth-child(odd) {
+    font-style: italic;
 }
