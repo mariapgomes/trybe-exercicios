@@ -1,0 +1,1 @@
+Aqui aprendi sobre como estilizar uma página HTML utilizando o CSS, criando estilos para tags, utilizando os seletores de tag, id e class para aplicar regras de CSS, alterarando características da fonte e das cores de páginas web e utilizando CSS inline e externo.
