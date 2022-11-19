@@ -1,0 +1,68 @@
+.background {
+    background-color: yellow;
+}
+
+/* (even) atribui os styles aos ítens pares da lista */
+
+ol li:nth-child(even) {
+    color: green;
+}
+
+/* Quando é por descendência não precisa separar por vírgula */
+
+ol li:nth-child(odd) {
+    text-transform: uppercase;
+}
+
+/* Quando seja junção de tags deve-se sepaar por vírgula */
+
+ h1, h3 {
+    color: red
+}
+
+/* Indica que todos as tags especificadas que utilizam a tag em irão utilizar o style a seguir */
+
+h1 em, h3 em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px; 
+ }
+
+ li em {
+    font-weight: bold;
+ }
+
+ /* O :not() serve para tornar uma ação contrária ao que ela faz e o id expecifica a ul para fazer as alterações */
+
+ #linguagens-color li:not(:nth-child(n + 4)) {
+    color: blue;
+  }
+
+  .pink-bg {
+    background-color: pink;
+  }
+
+  #laranja:hover {
+    font-weight: bold;
+    background-color:orange
+  }
+
+  #preto:hover {
+    font-weight: bold;
+    background-color:black
+  }
+
+  .verde:hover {
+    font-weight: bold;
+    background-color:green
+  }
+
+  #amarelo:hover {
+    font-weight: bold;
+    background-color:yellow
+  }
+
+  
