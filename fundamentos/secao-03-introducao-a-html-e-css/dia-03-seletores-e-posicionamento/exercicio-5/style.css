@@ -1,0 +1,13 @@
+.background {
+    background-color: yellow;
+}
+
+/* (even) atribui os styles aos ítens pares da lista */
+
+ol li:nth-child(even) {
+    color: green;
+}
+
+ol li:nth-child(odd) {
+    text-transform: uppercase;
+}
