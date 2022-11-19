@@ -34,3 +34,35 @@ li {
  li em {
     font-weight: bold;
  }
+
+ /* O :not() serve para tornar uma ação contrária ao que ela faz e o id expecifica a ul para fazer as alterações */
+
+ #linguagens-color li:not(:nth-child(n + 4)) {
+    color: blue;
+  }
+
+  .pink-bg {
+    background-color: pink;
+  }
+
+  #laranja:hover {
+    font-weight: bold;
+    background-color:orange
+  }
+
+  #preto:hover {
+    font-weight: bold;
+    background-color:black
+  }
+
+  .verde:hover {
+    font-weight: bold;
+    background-color:green
+  }
+
+  #amarelo:hover {
+    font-weight: bold;
+    background-color:yellow
+  }
+
+  
