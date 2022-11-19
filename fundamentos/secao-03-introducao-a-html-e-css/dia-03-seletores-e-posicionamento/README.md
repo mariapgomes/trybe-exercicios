@@ -1,0 +1,1 @@
+Nessa aula aprendi sobre como funciona o Box Model do CSS e como os elementos da página se relacionam visualmente, a posicionar elementos na página de diferentes formas e a combinar e agrupar seletores de CSS para criar regras bem definidas.
