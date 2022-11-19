@@ -8,6 +8,21 @@ ol li:nth-child(even) {
     color: green;
 }
 
+/* Quando é por descendência não precisa separar por vírgula */
+
 ol li:nth-child(odd) {
     text-transform: uppercase;
+}
+
+/* Quando seja junção de tags deve-se sepaar por vírgula */
+
+ h1, h3 {
+    color: red
+}
+
+/* Indica que todos as tags especificadas que utilizam a tag em irão utilizar o style a seguir */
+
+h1 em, h3 em {
+    font-size: 40px;
+    border: 1px solid black;
 }
