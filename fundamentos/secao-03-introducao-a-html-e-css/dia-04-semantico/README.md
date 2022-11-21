@@ -1,0 +1,1 @@
+Nessa Aula, aprendi como fazer uso de elementos HTML de acordo com o sentido e o propósito que eles carregam, como criar páginas semanticamente válidas e acessíveis e entender a diferença entre elementos de bloco e elementos inline.
