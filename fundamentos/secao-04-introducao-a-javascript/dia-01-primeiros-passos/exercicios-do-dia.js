@@ -1,8 +1,7 @@
 //Exercício 1
 
-const primeiroNumero = 7;
-const segundoNumero = 9;
-const terceiroNumero = 15;
+// const primeiroNumero = 7;
+// const segundoNumero = 9;
 
 // console.log(primeiroNumero + segundoNumero);
 // console.log(primeiroNumero - segundoNumero);
@@ -12,7 +11,10 @@ const terceiroNumero = 15;
 
 //Exercício 2
 
-let resultado = "";
+// const primeiroNumero = 5;
+// const segundoNumero = 27;
+// const terceiroNumero = 32;
+// let resultado = "";
 
 // if (primeiroNumero > segundoNumero) {
 //     resultado = "O numero " + primeiroNumero + " é o maior";
@@ -28,19 +30,41 @@ let resultado = "";
 
 //Exercício 3
 
-if (primeiroNumero > segundoNumero && primeiroNumero >terceiroNumero) {
-    resultado = "O numero " + primeiroNumero + " é o maior";
+// const primeiroNumero = 7;
+// const segundoNumero = 9;
+// const terceiroNumero = 15;
+// let resultado = "";
+
+// if (primeiroNumero > segundoNumero && primeiroNumero >terceiroNumero) {
+//     resultado = "O numero " + primeiroNumero + " é o maior";
+// }
+// else if (segundoNumero > primeiroNumero && segundoNumero >terceiroNumero) {
+//     resultado = "O numero " + segundoNumero + " é o maior";
+// }
+// else if (terceiroNumero > primeiroNumero && terceiroNumero > segundoNumero) {
+//     resultado = "O numero " + terceiroNumero + " é o maior";
+// }
+// else {
+//     resultado = "Os números são iguais";
+// }
+
+// console.log(resultado);
+
+//Exercício 4
+
+const numero = 0;
+let resultado = "";
+
+if (numero > 0) {
+    resultado = "positivo";
 }
-else if (segundoNumero > primeiroNumero && segundoNumero >terceiroNumero) {
-    resultado = "O numero " + segundoNumero + " é o maior";
-}
-else if (terceiroNumero > primeiroNumero && terceiroNumero > segundoNumero) {
-    resultado = "O numero " + terceiroNumero + " é o maior";
+else if (numero < 0) {
+    resultado = "negativo";
 }
 else {
-    resultado = "Os números são iguais";
+    resultado = "zero";
 }
 
 console.log(resultado);
 
-//Exercício 4
+//Exercício 5
