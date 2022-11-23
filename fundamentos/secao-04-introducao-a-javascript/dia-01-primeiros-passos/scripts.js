@@ -58,3 +58,14 @@
 // }
 
 // console.log(message)
+
+// Exercício 5
+
+let weekDay = "Domingo";
+
+if (weekDay === "Segunda-feira" || weekDay === "terça-feira" || weekDay === "quarta-feira" || weekDay === "quinta-feira" || weekDay === "sexta-feira") {
+    console.log("Oba, mais um dia de aprendizado na Trybe >:D");
+}
+else {
+    console.log("FINALMENTE, descanso merecido UwU");
+}
