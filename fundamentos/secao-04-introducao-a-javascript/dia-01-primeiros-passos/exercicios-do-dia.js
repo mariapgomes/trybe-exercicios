@@ -101,27 +101,42 @@
 
 // Exemplo: bishop (bispo) -> diagonals (diagonais)
 
-let pecas = 'Torre';
+// let pecas = 'Torre';
 
-switch (pecas.toLowerCase()) {
-    case 'rei':
-        console.log('Rei-> Uma casa apenas para qualquer direção.');
-        break;
-    case 'rainha':
-        console.log('Rainha-> Diagonal, horizontal e vertical.');
-        break;
-    case 'bispo':
-        console.log('Bispo-> Diagonal.');
-        break;
-    case 'cavalo':
-        console.log('Cavalo -> "L" pode pular sobre as peças.');
-        break;
-    case 'torre':
-        console.log('Torre -> Horizontal e vertical.');
-        break;
-    case 'peão':
-        console.log('Peão -> Apenas uma casa para frente, no primeiro movimento podem ser duas casas.')
-        break;
-    default:
-        console.log('Erro, peça inválida!')
-}
+// switch (pecas.toLowerCase()) {
+//     case 'rei':
+//         console.log('Rei-> Uma casa apenas para qualquer direção.');
+//         break;
+//     case 'rainha':
+//         console.log('Rainha-> Diagonal, horizontal e vertical.');
+//         break;
+//     case 'bispo':
+//         console.log('Bispo-> Diagonal.');
+//         break;
+//     case 'cavalo':
+//         console.log('Cavalo -> "L" pode pular sobre as peças.');
+//         break;
+//     case 'torre':
+//         console.log('Torre -> Horizontal e vertical.');
+//         break;
+//     case 'peão':
+//         console.log('Peão -> Apenas uma casa para frente, no primeiro movimento podem ser duas casas.')
+//         break;
+//     default:
+//         console.log('Erro, peça inválida!')
+// }
+
+//Exercício 7
+
+// Utilize if/else para escrever um código que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele deve retornar false.
+// Bonus: use somente um if.
+
+// const numeroUm = 1;
+// const numberDois = 8;
+// const numeroTres = 3;
+// let isEven = false;
+
+// if (numeroUm % 2 === 0 || numberDois % 2 === 0 || numeroTres % 2 ===0) {
+//     isEven = true
+// }
+// console.log(isEven);
