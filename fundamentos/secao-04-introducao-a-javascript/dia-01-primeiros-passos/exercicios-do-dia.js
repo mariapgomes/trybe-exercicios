@@ -52,19 +52,35 @@
 
 //Exercício 4
 
-const numero = 0;
-let resultado = "";
+// const numero = 0;
+// let resultado = "";
 
-if (numero > 0) {
-    resultado = "positivo";
-}
-else if (numero < 0) {
-    resultado = "negativo";
-}
-else {
-    resultado = "zero";
-}
+// if (numero > 0) {
+//     resultado = "positivo";
+// }
+// else if (numero < 0) {
+//     resultado = "negativo";
+// }
+// else {
+//     resultado = "zero";
+// }
 
-console.log(resultado);
+// console.log(resultado);
 
 //Exercício 5
+
+const primeiroAngulo = 70;
+const segundoAngulo = -50;
+const terceiroAngulo = 60;
+let calculo = primeiroAngulo + segundoAngulo + terceiroAngulo;
+let angulosPositivos = primeiroAngulo > 0 && segundoAngulo > 0 && terceiroAngulo > 0;
+
+if (angulosPositivos) {
+    if (calculo === 180) {
+        console.log(true);
+    } else {
+        console.log(false);
+      }
+} else {
+    console.log("Erro! Ângulo inválido.")
+}
