@@ -12,12 +12,26 @@
 
 //Exercício 2
 
-const base = 5;
-const heigth = 8;
-const area = base * heigth;
+// const base = 5;
+// const heigth = 8;
+// const area = base * heigth;
 
-console.log(area);
+// console.log(area);
 
-const perimeter = 5 + 2 * 8;
+// const perimeter = 5 + 2 * 8;
 
-console.log(perimeter);
+// console.log(perimeter);
+
+// Exercício 3
+
+const nota = 50;
+
+if (nota >= 80) {
+    console.log("Parabéns, você foi aprovada(o)!");
+} 
+else if (nota < 80 && nota >= 60) {
+    console.log("Você está na nossa lista de espera");
+} 
+else {
+    console.log("Você foi reprovada(o)");
+}
