@@ -132,7 +132,7 @@
 // Bonus: use somente um if.
 
 // const numeroUm = 1;
-// const numberDois = 8;
+// const numberDois = 2;
 // const numeroTres = 3;
 // let isEven = false;
 
@@ -140,3 +140,18 @@
 //     isEven = true
 // }
 // console.log(isEven);
+
+//Exercício 8
+
+// Utilize if/else para escrever um código que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele deve retornar false.
+// Bonus: use somente um if.
+
+const primeiroN = 1;
+const segundoN = 8;
+const terceiroN = 3;
+let isOdd = false;
+
+if (primeiroN % 2 !== 0 || segundoN % 2 !== 0 || terceiroN % 2 !== 0) {
+    isOdd = true
+}
+console.log(isOdd);
