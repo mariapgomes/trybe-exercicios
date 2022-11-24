@@ -146,12 +146,28 @@
 // Utilize if/else para escrever um código que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele deve retornar false.
 // Bonus: use somente um if.
 
-const primeiroN = 1;
-const segundoN = 8;
-const terceiroN = 3;
-let isOdd = false;
+// const primeiroN = 1;
+// const segundoN = 8;
+// const terceiroN = 3;
+// let isOdd = false;
 
-if (primeiroN % 2 !== 0 || segundoN % 2 !== 0 || terceiroN % 2 !== 0) {
-    isOdd = true
+// if (primeiroN % 2 !== 0 || segundoN % 2 !== 0 || terceiroN % 2 !== 0) {
+//     isOdd = true
+// }
+// console.log(isOdd);
+
+//Exercício 9
+
+// (custo*(20/100)) Calculo de regra de três que representa a porcentagem de 20% do custo, assim não da erro na hora de rodar o código.
+
+let custo = 15;
+let valorVenda = 25;
+
+
+if (custo >= 0 && valorVenda >= 0) {
+    const custoTotal = custo + (custo*(20/100));
+    const resultado = (valorVenda - custoTotal) * 1000;
+    console.log(resultado);
+} else {
+    console.log("Erro, valores inválidos!");
 }
-console.log(isOdd);
