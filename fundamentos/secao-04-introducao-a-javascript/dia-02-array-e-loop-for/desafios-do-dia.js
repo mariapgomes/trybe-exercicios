@@ -105,9 +105,20 @@
 
 // Lição 8 - crie um array que vá de 1 até 25 e imprima o resultado.
 
-// let arrayNumeros = []
+let arrayNumeros = []
 
-// for (let contador = 1; contador <= 25; contador +=1) {
-//     arrayNumeros.push(contador)
-// }
-// console.log(arrayNumeros);
+for (let contador = 1; contador <= 25; contador +=1) {
+    arrayNumeros.push(contador)
+}
+console.log(arrayNumeros);
+
+//-------------------------------------------
+
+// Lição 9 - Utilizando o array que acabou de criar, imprima o resultado da divisão de cada um dos elementos por 2.
+
+let resultado;
+
+for (let index = 0; index < arrayNumeros.length; index += 1) {
+    resultado = arrayNumeros[index] / 2;
+    console.log(resultado);
+}
