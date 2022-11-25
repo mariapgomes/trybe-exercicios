@@ -57,7 +57,7 @@
 // Lição 5 - Descubra qual o maior valor contido no array e imprima-o.
 
 // let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-// let maiorNumero = 0;
+// let maiorNumero = numbers[0];
 
 // for (let index = 0; index < numbers.length; index +=1) {
 //     if (numbers[index] > maiorNumero){
@@ -71,19 +71,35 @@
 
 // Lição 6 - Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “nenhum valor ímpar encontrado”
 
-let numerosImpares = 0;
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-for (let index = 0; index < numbers.length; index +=1) {
-    if(numbers[index] % 2 !== 0) {
-        numerosImpares = numerosImpares + 1;
-    }
-} 
+// let numerosImpares = 0;
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-if (numerosImpares !== 0) {
-    console.log(numerosImpares);
-} else {
-    console.log("Nenhum número ímpar foi encontrado.");
-}
+// for (let index = 0; index < numbers.length; index +=1) {
+//     if(numbers[index] % 2 !== 0) {
+//         numerosImpares = numerosImpares + 1;
+//     }
+// } 
+
+// if (numerosImpares !== 0) {
+//     console.log(numerosImpares);
+// } else {
+//     console.log("Nenhum número ímpar foi encontrado.");
+// }
+
+//-------------------------------------------
+
+// Lição 7 - Descubra qual é o menor número da array e imprima-o.
+
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let menorNumero = numbers[0];
+
+// for (let index = 0; index < numbers.length; index +=1) {
+//     if (numbers[index] < menorNumero){
+//         menorNumero = numbers[index];
+//     }
+// }
+
+//   console.log(menorNumero);  
 
 //-------------------------------------------
 
