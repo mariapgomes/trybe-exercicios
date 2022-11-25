@@ -103,4 +103,11 @@
 
 //-------------------------------------------
 
-// Lição 7
+// Lição 8 - crie um array que vá de 1 até 25 e imprima o resultado.
+
+// let arrayNumeros = []
+
+// for (let contador = 1; contador <= 25; contador +=1) {
+//     arrayNumeros.push(contador)
+// }
+// console.log(arrayNumeros);
