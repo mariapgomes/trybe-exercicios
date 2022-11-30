@@ -63,3 +63,21 @@ for (let currentNumber = 2; currentNumber <= 50; currentNumber += 1) {
 }
 
 console.log(biggestPrimeNumber);
+
+//---------------------------------------------
+
+// Exercício Bonus 1 - Quadrado de asterísticos
+
+let n = 5;
+let symbol = '*';
+let inputLine = '';
+
+// for (let lineIndex = 0; lineIndex < n; lineIndex += 1) {
+//   inputLine += symbol;
+// };
+// for (let columnIndex = 0; columnIndex < n; columnIndex += 1) {
+//   console.log(inputLine);
+// };
+
+
+ 
