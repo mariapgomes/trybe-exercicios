@@ -49,7 +49,7 @@
 
 //-------------------------------------
 
-// Lição 2 de fixação
+// Lição 3 de fixação
 
 // function adicao (a, b){
 //     return a + b
@@ -75,3 +75,20 @@
 //     return a % b
 // }
 // console.log(modulo(5, 20))
+
+//-------------------------------------
+
+// Lição 4 de fixação
+
+const firstNumber = 17;
+const secondNumber = 20;
+
+function comparation (){
+    if (firstNumber > secondNumber){
+        return firstNumber + ' é o maior número'
+    } else {
+        return secondNumber + ' é o maior número'
+    }
+}
+
+console.log(comparation())
