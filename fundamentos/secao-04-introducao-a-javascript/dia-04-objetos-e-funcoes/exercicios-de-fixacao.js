@@ -95,19 +95,34 @@
 
 //-------------------------------------
 
-// Lição 4 de fixação
+// Lição 5 de fixação
 
-const firstNumber = 17;
-const secondNumber = 20;
-const thirdNumber = 50;
+// const firstNumber = 17;
+// const secondNumber = 20;
+// const thirdNumber = 50;
 
-function comparation() {
-    if (firstNumber > secondNumber && firstNumber > thirdNumber){
-       return firstNumber + ' é o maior número'
-    } else if (secondNumber > firstNumber && secondNumber > thirdNumber) {
-        return secondNumber + ' é o maior número'
+// function comparation() {
+//     if (firstNumber > secondNumber && firstNumber > thirdNumber){
+//        return firstNumber + ' é o maior número'
+//     } else if (secondNumber > firstNumber && secondNumber > thirdNumber) {
+//         return secondNumber + ' é o maior número'
+//     } else {
+//         return thirdNumber + ' é o maior numero'
+//     }
+// }
+// console.log(comparation());
+
+//-------------------------------------
+
+// Lição 5 de fixação
+
+function comparation(number) {
+    if (number > 0){
+       return 'O número é positivo'
+    } else if (number < 0) {
+        return 'O número é negativo'
     } else {
-        return thirdNumber + ' é o maior numero'
+        return 'O número é zero'
     }
 }
-console.log(comparation());
+console.log(comparation(0));
