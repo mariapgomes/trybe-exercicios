@@ -37,12 +37,41 @@
 //     // console.log('Olá ' + names[boasVindas])
 //   }
 
-  let car = {
-    model: 'A3 Sedan',
-    manufacturer: 'Audi',
-    year: 2020
-  };
+//   let car = {
+//     model: 'A3 Sedan',
+//     manufacturer: 'Audi',
+//     year: 2020
+//   };
 
-  for (key in car){
-    console.log(key, car[key])
-  }
+//   for (key in car){
+//     console.log(key, car[key])
+//   }
+
+//-------------------------------------
+
+// Lição 2 de fixação
+
+// function adicao (a, b){
+//     return a + b
+// }
+// console.log(adicao(5, 20))
+
+// function subtracao (a, b){
+//     return a - b
+// }
+// console.log(subtracao(5, 20))
+
+// function multiplicacao (a, b){
+//     return a * b
+// }
+// console.log(multiplicacao(5, 20))
+
+// function divisao (a, b){
+//     return a / b
+// }
+// console.log(divisao(5, 20))
+
+// function modulo (a, b){
+//     return a % b
+// }
+// console.log(modulo(5, 20))
