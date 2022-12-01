@@ -114,15 +114,32 @@
 
 //-------------------------------------
 
-// Lição 5 de fixação
+// Lição 6 de fixação
 
-function comparation(number) {
-    if (number > 0){
-       return 'O número é positivo'
-    } else if (number < 0) {
-        return 'O número é negativo'
+// function comparation(number) {
+//     if (number > 0){
+//        return 'O número é positivo'
+//     } else if (number < 0) {
+//         return 'O número é negativo'
+//     } else {
+//         return 'O número é zero'
+//     }
+// }
+// console.log(comparation(0));
+
+//-------------------------------------
+
+// Lição 7 de fixação
+
+let eUmTriangulo = true
+
+function comparation(firstAngle, secondAngle, thirdAngle) {
+    if (firstAngle <= 0 || secondAngle <= 0 || thirdAngle <= 0 ){
+       return 'Ângulo inválido! O angulo precisa ser maior que zero.'
+    } else if (firstAngle + secondAngle + thirdAngle !== 180) {
+        return eUmTriangulo = false;
     } else {
-        return 'O número é zero'
+        return eUmTriangulo;
     }
 }
-console.log(comparation(0));
+console.log(comparation(60, 60, -9));
