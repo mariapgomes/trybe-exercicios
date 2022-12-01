@@ -118,6 +118,45 @@
 //   console.log(hello(nome));
 
 //Depois
-// const hello = (nome) => `Olá, ${nome}!`
+// const hello = nome => `Olá, ${nome}!`
  
 //   console.log(hello('Ivan'));
+
+//-----------------------------------------
+
+// Desafio 7 - Transforme a função nomeCompleto em uma arrow function.
+
+//Antes
+// function nomeCompleto(nome, sobrenome) {
+//     return `${nome} ${sobrenome}`
+//   }
+//   let nome = 'Ivan';
+//   let sobrenome = 'Pires';
+//   console.log(nomeCompleto(nome, sobrenome));
+
+//Depois
+
+// const nomeCompleto = (nome, sobrenome) => `${nome} ${sobrenome}`
+ 
+//   console.log(nomeCompleto('Ivan', 'Pires'));
+
+//-----------------------------------------
+
+// Desafio 8 - Altere a expressão if/else utilizando ternary operator.
+
+//Antes
+// let speed = 90;
+// const speedCar = (speed) => {
+//   if (speed >= 120) {
+//     return `Você ultrapassou o limite de velocidade`;
+//   } else {
+//     return `Você está na velocidade permitida`;
+//   }
+// };
+// console.log(speedCar(speed));
+
+//Depois
+// const speedCar = (speed) => (speed >= 120) ? `Você ultrapassou o limite de velocidade` : `Você está na velocidade permitida`;
+
+// console.log(speedCar(150));
+
