@@ -37,19 +37,41 @@
 
 // Desafio 3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
 
-let arrayTeste = [2, 4, 6, 7, 10, 0, -3];
-let menorValor = [];
-let indiceDoMenorValor = 0;
+// let arrayTeste = [2, 4, 6, 7, 10, 0, -3];
+// let menorValor = [];
+// let indiceDoMenorValor = 0;
 
-function retornaIndiceMaiorValor() {
+// function retornaIndiceMenorValor() {
+   
+//     for (let index = 0; index < arrayTeste.length; index += 1) {
+//         if (arrayTeste[index] < menorValor) {
+//             menorValor = arrayTeste[index];
+//             indiceDoMenorValor = index;
+//         }
+//     }
+//     return indiceDoMenorValor;
+// }
+
+// console.log(retornaIndiceMenorValor(arrayTeste));
+
+//--------------------------------------------
+
+// Desafio 4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
+
+let arrayTeste = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']; 
+
+let maiorNome = '';
+let indice = 0;
+
+function retornaIndiceMaiorNome() {
    
     for (let index = 0; index < arrayTeste.length; index += 1) {
-        if (arrayTeste[index] < menorValor) {
-            menorValor = arrayTeste[index];
-            indiceDoMenorValor = index;
+        if (arrayTeste[index].length > maiorNome.length) {
+            maiorNome = arrayTeste[index]
         }
     }
-    return indiceDoMenorValor;
+    return maiorNome;
 }
 
-console.log(retornaIndiceMaiorValor(arrayTeste));
+console.log(retornaIndiceMaiorNome(maiorNome));
+
