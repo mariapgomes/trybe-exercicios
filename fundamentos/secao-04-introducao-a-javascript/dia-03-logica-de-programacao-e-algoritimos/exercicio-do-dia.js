@@ -135,7 +135,7 @@
 //   linha+="*";
 // };
 
-// Exercício Bonus 4 - Faça uma pirâmide com n asteriscos de base que seja vazia no meio. Assuma que o valor de n será sempre ímpar:
+// Exercício Bonus 5 - Faça uma pirâmide com n asteriscos de base que seja vazia no meio. Assuma que o valor de n será sempre ímpar:
 
 const n = 9;
 let asterisco = '*';
