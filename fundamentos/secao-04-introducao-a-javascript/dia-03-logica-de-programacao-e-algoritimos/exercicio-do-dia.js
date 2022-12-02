@@ -90,7 +90,7 @@
  
 //---------------------------------------------
 
-// Exercício Bonus 2 - Triângulo de asterísticos invertido
+// Exercício Bonus 3 - Triângulo de asterísticos invertido
 
 // let inputPosition = n - 1;
 
@@ -108,3 +108,22 @@
 // };
 
 //--------------------------------------------
+
+// Exercício Bonus 4 - faça uma pirâmide com n asteriscos de base:
+
+const n=7;
+let linha="*";
+let nespacos=((n-1)/2); //2
+let espacos=[];
+
+for(let s = 1; s <= nespacos; s += 1){
+  espacos.push(' ');
+}
+
+for(let l = 1; l <= n; l += 1){
+    if(l%2){
+        console.log(espacos.join('')+linha+espacos.join(''));
+        espacos.pop();
+    }
+  linha+="*";
+};
