@@ -21,7 +21,7 @@
 // let indice = 0;
 
 // function retornaIndiceMaiorValor() {
-   
+
 //     for (let index = 0; index < arrayTeste.length; index += 1) {
 //         if (arrayTeste[index] > maiorValor) {
 //             maiorValor = arrayTeste[index];
@@ -42,7 +42,7 @@
 // let indiceDoMenorValor = 0;
 
 // function retornaIndiceMenorValor() {
-   
+
 //     for (let index = 0; index < arrayTeste.length; index += 1) {
 //         if (arrayTeste[index] < menorValor) {
 //             menorValor = arrayTeste[index];
@@ -58,20 +58,85 @@
 
 // Desafio 4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
 
-let arrayTeste = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']; 
+// let arrayTeste = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']; 
 
-let maiorNome = '';
-let indice = 0;
+// let maiorNome = '';
+// let indice = 0;
 
-function retornaIndiceMaiorNome() {
-   
-    for (let index = 0; index < arrayTeste.length; index += 1) {
-        if (arrayTeste[index].length > maiorNome.length) {
-            maiorNome = arrayTeste[index]
+// function retornaIndiceMaiorNome() {
+
+//     for (let index = 0; index < arrayTeste.length; index += 1) {
+//         if (arrayTeste[index].length > maiorNome.length) {
+//             maiorNome = arrayTeste[index]
+//         }
+//     }
+//     return maiorNome;
+// }
+
+// console.log(retornaIndiceMaiorNome(maiorNome));
+
+//--------------------------------------------
+
+// Desafio 5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
+
+// function maisRepetido(numeros) {
+//     let contRepetido = 0;
+//     let contNumero = 0;
+//     let indexNumeroRepetido = 0;
+
+//     for (let index in numeros) {
+//       let verificaNumero = numeros[index];
+//       for (let index2 in numeros) {
+//         if (verificaNumero === numeros[index2]) {
+//           contNumero += 1;
+//         }
+//       }
+//       if (contNumero > contRepetido) {
+//         contRepetido = contNumero;
+//         indexNumeroRepetido = index;
+//       }
+//       contNumero = 0;
+//     }
+
+//     return numeros[indexNumeroRepetido];
+//   }
+
+//   console.log(maisRepetido([2, 3, 2, 5, 8, 2, 3]));
+
+//--------------------------------------------
+
+// Desafio 6 - Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N.
+
+// const n = 5;
+// let resultado = 0;
+
+// function soma(){
+//     for(let index = 1; index <= n; index += 1){
+//         resultado = resultado + index;
+//     }
+//     return resultado;
+// };
+// console.log(soma());
+
+//--------------------------------------------
+
+// Desafio 7 - Crie uma função que receba uma string word e outra string ending. Verifique se a string ending é o final da string word. Considere que a string ending sempre será menor que a string word.
+
+function verificaPalavra(palavra, final) {
+    palavra = palavra.split('')
+    final = final.split('')
+    let eOFinal = true
+
+    for (let index = 0; index < final.length; index += 1) {
+        if (palavra[palavra.length - final.length + index] !== final[index]) {
+            eOFinal = false;
         }
     }
-    return maiorNome;
-}
 
-console.log(retornaIndiceMaiorNome(maiorNome));
+    return eOFinal;
+}
+console.log(verificaPalavra('trybe', 'be'));
+console.log(verificaPalavra('joaofernando', 'fernan')); 
+
+
 
