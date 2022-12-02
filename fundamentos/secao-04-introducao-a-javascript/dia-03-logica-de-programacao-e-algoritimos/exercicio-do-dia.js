@@ -16,7 +16,7 @@
 
 // for (let index = 0; index < word.length; index += 1){
 //     invertedWord += word[word.length - 1 - index];
-    
+
 // }
 // console.log(invertedWord);
 
@@ -83,16 +83,23 @@
 
 // Exercício Bonus 2 - Triângulo de asterísticos
 
+// let n = 5;
+// let symbol = '*';
+// let inputLine = '';
+
 // for (let lineIndex = 0; lineIndex < n; lineIndex += 1) {
 //     inputLine += symbol;
 //     console.log(inputLine);
 //   };
- 
+
 //---------------------------------------------
 
 // Exercício Bonus 3 - Triângulo de asterísticos invertido
 
 // let inputPosition = n - 1;
+// let n = 5;
+// let symbol = '*';
+// let inputLine = '';
 
 // for (let lineIndex = 0; lineIndex < n; lineIndex += 1) {
 //   for (let columnIndex = 0; columnIndex < n; columnIndex += 1) {
@@ -111,19 +118,61 @@
 
 // Exercício Bonus 4 - faça uma pirâmide com n asteriscos de base:
 
-const n=7;
-let linha="*";
-let nespacos=((n-1)/2); //2
-let espacos=[];
+// const n=7;
+// let linha="*";
+// let nespacos=((n-1)/2); //2
+// let espacos=[];
 
-for(let s = 1; s <= nespacos; s += 1){
-  espacos.push(' ');
+// for(let s = 1; s <= nespacos; s += 1){
+//   espacos.push(' ');
+// }
+
+// for(let l = 1; l <= n; l += 1){
+//     if(l%2){
+//         console.log(espacos.join('')+linha+espacos.join(''));
+//         espacos.pop();
+//     }
+//   linha+="*";
+// };
+
+// Exercício Bonus 4 - Faça uma pirâmide com n asteriscos de base que seja vazia no meio. Assuma que o valor de n será sempre ímpar:
+
+const n = 9;
+let asterisco = '*';
+let linha = '*';
+let nespacosExt = Math.floor((n - 1) / 2);
+let nespacosInt = [];
+let espacoInt = [];
+let espacoExt;
+
+if (n % 2) {
+    espacoExt = []
+} else {
+    espacoExt = [' ']
+};
+
+for (let s = 1; s <= nespacosExt; s += 1) {
+    espacoExt.push(' ');
 }
 
-for(let l = 1; l <= n; l += 1){
-    if(l%2){
-        console.log(espacos.join('')+linha+espacos.join(''));
-        espacos.pop();
-    }
-  linha+="*";
-};
+
+for (let l = 1; l < n; l += 1) {
+    if (l % 2) {
+        if (l === 1) {
+            console.log(espacoExt.join('') + asterisco + espacoExt.join(''));
+            espacoInt.push(' ');
+        }
+        else {
+            console.log(espacoExt.join('') + asterisco + espacoInt.join('') + asterisco + espacoExt.join(''));
+            espacoInt.push('  ');
+        }
+        espacoExt.pop();
+    };
+    linha += "*";
+}
+
+if (n % 2 === 0) {
+    linha += "*";
+}
+
+console.log(linha);
