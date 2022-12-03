@@ -24,11 +24,11 @@
 //     for ( let index = 0; index < string.length; index += 1 ) {
 //         for (let index2 in algarismoRomadno) {
 //             if (index2 === string[index]) {
-//                 stringConvertida.push(algarismoRomadno[index2])
+//                 stringConvertida.push(algarismoRomadno[index2]);
 //             }
 //         }
 //     }
-//     console.log(stringConvertida)
+
 //     for (let index = 0; index < stringConvertida.length; index += 1) {
 //         if (stringConvertida[index] > resultadoString){
 //             resultadoString = resultadoString + stringConvertida[index];
@@ -36,9 +36,9 @@
 //             resultadoString = resultadoString - stringConvertida[index];
 //         }
 //     }
-//     return resultadoString
+//     return resultadoString;
 // }
-// console.log(valorDaString())
+// console.log(valorDaString());
 
 //////////////////////////////////////////
 
@@ -46,29 +46,100 @@
 
 
 
-const vector = [[1, 2], [3,4,5,6], [7,8,9,10]];
-let numerosPares = []
-let numerosArray = []
+// const vector = [[1, 2], [3,4,5,6], [7,8,9,10]];
+// let numerosPares = [];
+// let numerosArray = [];
 
 
-function arrayOfNumbers () {
-    for (let index in vector){
-        for (let index2 = 0; index2 < vector[index].length; index2 += 1) {
-            numerosArray.push(vector[index][index2])   
-        }
+// function arrayOfNumbers () {
+//     for (let index in vector){
+//         for (let index2 = 0; index2 < vector[index].length; index2 += 1) {
+//             numerosArray.push(vector[index][index2]);   
+//         }
         
-    }
-    for (let index = 0; index < numerosArray.length; index += 1) {
-        if (numerosArray[index] % 2 === 0) {
-            numerosPares.push(numerosArray[index])
-        }
+//     }
+//     for (let index = 0; index < numerosArray.length; index += 1) {
+//         if (numerosArray[index] % 2 === 0) {
+//             numerosPares.push(numerosArray[index]);
+//         }
         
-    }
-    return numerosPares
-}
-console.log(arrayOfNumbers())
+//     }
+//     return numerosPares;
+// }
+// console.log(arrayOfNumbers());
+
+//////////////////////////////////////////
+
+//Desafio 3 - A partir do array de frutas basket, retorne um objeto que contenha o nome da fruta como chave e a quantidade de vezes que ela aparece no array como valor. Por exemplo, o array [‘Melancia’, ‘Abacate’, ‘Melancia’, ‘Melancia’, ‘Uva’], deverá retornar { Melancia: 3, Abacate: 1, Uva: 1 } quando passado como argumento para a função. Imprima uma mensagem no formato "Sua cesta possui: x Melancias, x Abacates..."
 
 
+// const basket = [
+//     'Melancia', 'Abacate', 'Melancia', 'Melancia', 'Uva', 'Laranja',
+//     'Jaca', 'Pera', 'Melancia', 'Uva', 'Laranja', 'Melancia',
+//     'Banana', 'Uva', 'Pera', 'Abacate', 'Laranja', 'Abacate',
+//     'Banana', 'Melancia', 'Laranja', 'Laranja', 'Jaca', 'Uva',
+//     'Banana', 'Uva', 'Laranja', 'Pera', 'Melancia', 'Uva',
+//     'Jaca', 'Banana', 'Pera', 'Abacate', 'Melancia', 'Melancia',
+//     'Laranja', 'Pera', 'Banana', 'Jaca', 'Laranja', 'Melancia',
+//     'Abacate', 'Abacate', 'Pera', 'Melancia', 'Banana', 'Banana',
+//     'Abacate', 'Uva', 'Laranja', 'Banana', 'Abacate', 'Uva',
+//     'Uva', 'Abacate', 'Abacate', 'Melancia', 'Uva', 'Jaca',
+//     'Uva', 'Banana', 'Abacate', 'Banana', 'Uva', 'Banana',
+//     'Laranja', 'Laranja', 'Jaca', 'Jaca', 'Abacate', 'Jaca',
+//     'Laranja', 'Melancia', 'Pera', 'Jaca', 'Melancia', 'Uva',
+//     'Abacate', 'Jaca', 'Jaca', 'Abacate', 'Uva', 'Laranja',
+//     'Pera', 'Melancia', 'Jaca', 'Pera', 'Laranja', 'Jaca',
+//     'Pera', 'Melancia', 'Jaca', 'Banana', 'Laranja', 'Jaca',
+//     'Banana', 'Pera', 'Abacate', 'Uva',
+//   ];
+
+// let quantidadeFrutas = {
+//     "Melancia": 0,
+//     "Abacate": 0,
+//     "Uva": 0,
+//     "Laranja": 0,
+//     "Jaca": 0,
+//     "Pera": 0,
+//     "Banana": 0,
+// }
+
+// for (let index = 0; index < basket.length; index += 1) {
+//     let fruta = basket[index];
+//     switch (fruta) {
+//         case "Melancia":
+//             quantidadeFrutas['Melancia'] += 1;
+//             break;
+
+//         case "Abacate":
+//             quantidadeFrutas['Abacate'] += 1;
+//             break;
+
+//         case "Uva":
+//             quantidadeFrutas['Uva'] += 1;
+//             break;
+
+//         case "Laranja":
+//             quantidadeFrutas['Laranja'] += 1;
+//             break;
+
+//         case "Jaca":
+//             quantidadeFrutas['Jaca'] += 1;
+//             break;
+
+//         case "Pera":
+//             quantidadeFrutas['Pera'] += 1;
+//             break;
+
+//         case "Banana":
+//             quantidadeFrutas['Banana'] += 1;
+//             break;
+//     }
+// }
+// console.log('Sua Cesta possui:', quantidadeFrutas['Melancia'], 'Melancias,', quantidadeFrutas['Abacate'], 'Abacates,', quantidadeFrutas['Uva'], 'Uvas,', quantidadeFrutas['Laranja'], 'Laranjas,', quantidadeFrutas['Jaca'], 'Jacas,', quantidadeFrutas['Pera'], 'Peras e', quantidadeFrutas['Banana'], 'Bananas.');
+
+// OU
+
+// console.log('Sua Cesta possui:', quantidadeFrutas);
 
 
 
