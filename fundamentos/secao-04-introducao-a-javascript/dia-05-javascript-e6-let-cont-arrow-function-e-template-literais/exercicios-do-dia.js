@@ -18,7 +18,7 @@
 // }
 //   imprimeIdade()
 
-//-----------------------------------------
+///////////////////////////////////////////////////
 
 // Desafio 2 - Altere o valor das propriedades do objeto, para que respeite as características da variável do tipo const;
 
@@ -48,7 +48,7 @@
 //   console.log('Nome:', pessoa.nome);
 //   console.log('Idade:', pessoa.idade);
 
-//-----------------------------------------
+/////////////////////////////////////////////
 
 // Desafio 3 -  Modifique a variável para que não ocorra Erro;
 
@@ -62,7 +62,7 @@
 // favoriteFood = 'Hamburguer';
 // console.log(favoriteFood);
 
-//-----------------------------------------
+/////////////////////////////////////////////////
 
 // Desafio 4 - Modifique as concatenações para template literals.
 
@@ -91,7 +91,7 @@
 // let b = 5;
 // console.log(`O resultado da soma de ${a} + ${b} é: ${ a + b}`);
 
-//-----------------------------------------
+////////////////////////////////////////////
 
 // Desafio 5 -  Modifique a estrutura das funções a seguir para que elas sejam arrow functions.
 
@@ -106,7 +106,7 @@
 
 //   console.log(numeroAleatorio());
 
-//-----------------------------------------
+/////////////////////////////////////////
 
 // Desafio 6 - Transforme a função hello em uma arrow function.
 
@@ -122,7 +122,7 @@
  
 //   console.log(hello('Ivan'));
 
-//-----------------------------------------
+///////////////////////////////////////
 
 // Desafio 7 - Transforme a função nomeCompleto em uma arrow function.
 
@@ -140,7 +140,7 @@
  
 //   console.log(nomeCompleto('Ivan', 'Pires'));
 
-//-----------------------------------------
+//////////////////////////////////////
 
 // Desafio 8 - Altere a expressão if/else utilizando ternary operator.
 
@@ -156,7 +156,17 @@
 // console.log(speedCar(speed));
 
 //Depois
+
 // const speedCar = (speed) => (speed >= 120) ? `Você ultrapassou o limite de velocidade` : `Você está na velocidade permitida`;
 
 // console.log(speedCar(150));
 
+/////////////////////////////////////////////////
+
+// Desafio 9 - Crie uma função que ligue e desligue um motor de um carro.
+
+let statusMotor = 'Desligado';
+
+const ligaDesliga = () => (statusMotor === 'Desligado') ? statusMotor = 'Ligado' : statusMotor = 'Desligado';
+
+console.log(`O motor está ${ligaDesliga()}`)
