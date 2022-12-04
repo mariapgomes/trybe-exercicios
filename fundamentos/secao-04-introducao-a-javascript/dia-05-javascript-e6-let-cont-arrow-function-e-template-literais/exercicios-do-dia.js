@@ -243,7 +243,9 @@
 
 // function minhasSkills (funcao1) {
 //   const skills = ['HTML', ' CSS', ' JavaScript.'];
-//   let habilidades = `${funcao1} \nMinhas três principais habilidades são: \n${skills}`;
+//   let habilidades = `${funcao1}
+//   Minhas três principais habilidades são:
+//   ${skills}`;
 //   return habilidades;
 // }
 // console.log(minhasSkills(substituaX('Bebeto')));
