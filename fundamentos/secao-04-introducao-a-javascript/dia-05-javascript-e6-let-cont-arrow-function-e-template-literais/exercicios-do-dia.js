@@ -165,17 +165,36 @@
 
 // Desafio 9 - Crie uma função que ligue e desligue um motor de um carro.
 
-let statusMotor = 'Desligado';
+// let statusMotor = 'Desligado';
 
-const ligaDesliga = () => (statusMotor === 'Desligado') ? statusMotor = 'Ligado' : statusMotor = 'Desligado';
+// const ligaDesliga = () => (statusMotor === 'Desligado') ? statusMotor = 'Ligado' : statusMotor = 'Desligado';
 
-console.log(`O motor está ${ligaDesliga()}`)
+// console.log(`O motor está ${ligaDesliga()}`);
 
 /////////////////////////////////////////////////
 
 // Desafio 10 -  Crie uma função que calcule a área de um círculo.
 
-const pi = 3.14;
-const circleArea = (raio) => pi * raio**2;
+// const pi = 3.14;
+// const circleArea = (raio) => pi * raio**2;
 
-console.log(`Essa é a área do círculo: ${circleArea(5)}.`)
+// console.log(`Essa é a área do círculo: ${circleArea(5)}.`);
+
+/////////////////////////////////////////////////
+
+// Desafio 11 Parte I- Crie uma função que receba uma frase como parâmetro e retorne a maior palavra da frase.
+
+let longestWord = '';
+let fraseArray = '';
+function biggestWord (frase) { 
+  fraseArray = frase.split(' ')
+  for (let valor of fraseArray) {
+    if (valor.length > longestWord.length){
+      longestWord = valor;
+    } 
+  }
+  return longestWord;
+}
+console.log(biggestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
+
+//Desafio 11 Parte II
