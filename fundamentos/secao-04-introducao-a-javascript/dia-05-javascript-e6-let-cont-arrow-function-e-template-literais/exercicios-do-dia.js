@@ -184,10 +184,10 @@
 
 // Desafio 11 Parte I- Crie uma função que receba uma frase como parâmetro e retorne a maior palavra da frase.
 
-// let longestWord = '';
-// let fraseArray = '';
 
 // function biggestWord (frase) { 
+//   let longestWord = '';
+//   let fraseArray = '';
 //   fraseArray = frase.split(' ')
 
 //   for (let valor of fraseArray) {
@@ -203,13 +203,12 @@
 
 //Desafio 11 Parte II - Tente fazer o mesmo exercício utilizando o método array.sort().
 
-// let longestWord = '';
-// let fraseArray = '';
-// let fraseOrdenada = '';
 
 // function biggestWord (frase) { 
-//   fraseArray = frase.split(' ')
-//   fraseOrdenada = fraseArray.sort()
+//   let fraseArray = frase.split(' ');
+//   let fraseOrdenada = fraseArray.sort();
+//   let longestWord = '';
+
 //   for (let valor of fraseOrdenada) {
 //     if (valor.length > longestWord.length){
 //       longestWord = valor;
@@ -218,3 +217,33 @@
 //   return longestWord;
 // }
 // console.log(biggestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
+
+//////////////////////////////////////////////////////
+//Desafio Bônus
+/////////////////////////////////////////////////////
+
+//Desafio 1 - Crie duas funções JavaScript com as seguintes especificações: 
+
+//Função 1: Escreva uma função que substitua a letra ‘x’ em uma frase.
+
+// function substituaX (nome) {
+//   const frase = 'Trybe x aqui!'.split(' ');
+//   let fraseModificada = '';
+  
+//   for (let valor of frase) {
+//     if (valor === 'x') {
+//       fraseModificada = `Trybe ${nome} aqui!`;
+//     }
+//   }
+//   return fraseModificada;
+// }
+// console.log(substituaX('Bebeto'));
+
+// Função 2: Escreva uma função que irá receber o retorno da Função 1 por parâmetro e retornará uma nova string.
+
+// function minhasSkills (funcao1) {
+//   const skills = ['HTML', ' CSS', ' JavaScript.'];
+//   let habilidades = `${funcao1} \nMinhas três principais habilidades são: \n${skills}`;
+//   return habilidades;
+// }
+// console.log(minhasSkills(substituaX('Bebeto')));
