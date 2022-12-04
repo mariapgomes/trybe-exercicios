@@ -184,17 +184,37 @@
 
 // Desafio 11 Parte I- Crie uma função que receba uma frase como parâmetro e retorne a maior palavra da frase.
 
-let longestWord = '';
-let fraseArray = '';
-function biggestWord (frase) { 
-  fraseArray = frase.split(' ')
-  for (let valor of fraseArray) {
-    if (valor.length > longestWord.length){
-      longestWord = valor;
-    } 
-  }
-  return longestWord;
-}
-console.log(biggestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
+// let longestWord = '';
+// let fraseArray = '';
 
-//Desafio 11 Parte II
+// function biggestWord (frase) { 
+//   fraseArray = frase.split(' ')
+
+//   for (let valor of fraseArray) {
+//     if (valor.length > longestWord.length){
+//       longestWord = valor;
+//     } 
+//   }
+//   return longestWord;
+// }
+// console.log(biggestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
+
+//----------------------------------------
+
+//Desafio 11 Parte II - Tente fazer o mesmo exercício utilizando o método array.sort().
+
+// let longestWord = '';
+// let fraseArray = '';
+// let fraseOrdenada = '';
+
+// function biggestWord (frase) { 
+//   fraseArray = frase.split(' ')
+//   fraseOrdenada = fraseArray.sort()
+//   for (let valor of fraseOrdenada) {
+//     if (valor.length > longestWord.length){
+//       longestWord = valor;
+//     } 
+//   }
+//   return longestWord;
+// }
+// console.log(biggestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
