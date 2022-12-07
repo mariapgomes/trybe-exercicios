@@ -59,9 +59,15 @@
         }
         mudaCorCenter();
 
+        const corrigeH1 = () => {
+            let titulo = document.getElementsByClassName("title")[0]
+            titulo.innerText = "Desafio - JavaScript"; 
+        }
+        corrigeH1();
+
     
 
-        document.getElementsByTagName("h1").innerText = "Desafio - JavaScript";
+        
 
         let conteudoTags = document.getElementsByTagName("body");
 
