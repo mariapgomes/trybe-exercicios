@@ -45,10 +45,15 @@
         </section>
     </main>
     <script>
-        document.getElementsByTagName("p")[1].innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam placerat ipsum ipsum, eget pulvinar felis tincidunt eget. Sed mollis nisi et dolor vehicula, vitae luctus neque dapibus. Proin et est nisl. Aliquam at lectus faucibus, venenatis mauris eu, hendrerit neque. Pellentesque placerat efficitur quam, luctus faucibus tellus pellentesque vel. Donec pulvinar lacinia ligula id gravida. Quisque eu augue pretium, imperdiet purus vitae, dictum est. Nam ut tellus sollicitudin, porttitor lorem at, euismod eros. Ut molestie sed mauris volutpat tristique.";
+        //Crie e execute uma função que mude o texto na tag <p>-----</p>, para uma descrição de como você se vê daqui a 2 anos;
+        const paragrafo = () => {
+            let paragrafoPrincipal = document.getElementsByTagName("p")[1];
+            paragrafoPrincipal.innerText = "Me vejo trabalhando em uma empresa grande, com princípios estabelecidos e que se encaixem com os meus, também me vejo com pelo menos 1 ano de experiência e com a qualidade de vida melhor do que atualmente, pretendo também já estar fluente no inglês ou pelo menos perto disso.";
+        }
+        paragrafo();
 
         //Crie e execute uma função que mude a cor do quadrado amarelo para rgb(76,164,109);
-        
+
         const changeSquareToGreen = () => {
             let squareYellow = document.getElementsByClassName('main-content')[0];
             squareYellow.style.background = 'rgb(76,164,109)';
@@ -88,9 +93,6 @@
             }
         }
         conteudoTagsP();
-
-
-
     </script>
 </body>
 
