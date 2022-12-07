@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+
+    <style>
+        main,
+        section {
+            border-color: black;
+            border-style: solid;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .main-content {
+            background-color: yellow;
+        }
+
+        .main-content .center-content {
+            background-color: red;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .main-content .center-content p {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Desafio - JavaEscripito</h1>
+    </header>
+    <main class="main-content">
+        <section class="center-content">
+            <p>Texto padrão do nosso site</p>
+            <p>-----</p>
+            <p>Trybe</p>
+        </section>
+    </main>
+    <script>
+        //Crie e execute uma função que mude o texto na tag <p>-----</p>, para uma descrição de como você se vê daqui a 2 anos;
+        const paragrafo = () => {
+            let paragrafoPrincipal = document.getElementsByTagName("p")[1];
+            paragrafoPrincipal.innerText = "Me vejo trabalhando em uma empresa grande, com princípios estabelecidos e que se encaixem com os meus, também me vejo com pelo menos 1 ano de experiência e com a qualidade de vida melhor do que atualmente, pretendo também já estar fluente no inglês ou pelo menos perto disso.";
+        }
+        paragrafo();
+
+        //Crie e execute uma função que mude a cor do quadrado amarelo para rgb(76,164,109);
+
+        const changeSquareToGreen = () => {
+            let squareYellow = document.getElementsByClassName('main-content')[0];
+            squareYellow.style.background = 'rgb(76,164,109)';
+        }
+        changeSquareToGreen();
+
+        //Crie e execute uma função que mude a cor do quadrado vermelho para branco;
+
+        const mudaCorCenter = () => {
+            let whiteColor = document.getElementsByClassName("center-content")[0]
+            whiteColor.style.background = "white"; 
+        }
+        mudaCorCenter();
+
+        //Crie e execute uma função que corrija o texto da tag <h1>;
+
+        const corrigeH1 = () => {
+            let titulo = document.getElementsByClassName("title")[0]
+            titulo.innerText = "Desafio - JavaScript"; 
+        }
+        corrigeH1();
+
+        //Crie e execute uma função que modifique o texto da primeira tag <p> para maiúsculo;
+
+        const textoTagP = () => {
+            let primeiroParagrafo = document.getElementsByTagName("p")[0]
+            primeiroParagrafo.innerText = primeiroParagrafo.innerText.toUpperCase(); 
+        }
+        textoTagP();
+
+        //Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
+
+        const conteudoTagsP = () => {
+            let tagP = document.getElementsByTagName("p");
+            for (valor of tagP){
+                console.log(valor.innerText)
+            }
+        }
+        conteudoTagsP();
+    </script>
+</body>
+
+</html>
