@@ -121,7 +121,16 @@
       }
       lista()
 
-      
+      //Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
+
+      const criaH3 = (elementoPai, elemento) => {
+        for (let index = 1; index <= 3; index += 1){
+            const criandoH3 = document.createElement(elemento);
+            elementoPai.appendChild(criandoH3);
+        }
+
+      }
+      criaH3(main, 'h3');
 
     </script>
   </body>
