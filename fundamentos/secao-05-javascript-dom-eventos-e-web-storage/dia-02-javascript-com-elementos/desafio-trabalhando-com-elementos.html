@@ -78,8 +78,15 @@
         elementoPai.appendChild(criaTags);
 
       }
-      criaTagsEClasses(main, 'section', 'center-content')
+      criaTagsEClasses(main, 'section', 'center-content');
 
+      //Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+
+      const section = document.querySelector('section');
+
+      const criaParagrafo = document.createElement('p');
+      criaParagrafo.innerText = 'Espero concluir esse exercício antes da aula ao vivo'
+      section.appendChild(criaParagrafo);
       
 
 
