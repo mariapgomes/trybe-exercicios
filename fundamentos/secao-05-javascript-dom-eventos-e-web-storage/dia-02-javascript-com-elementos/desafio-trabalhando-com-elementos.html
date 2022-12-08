@@ -57,17 +57,20 @@
   </head>
   <body>
     <script>
+       ///////////////////////////////////////////////////////////// 
       //Adicione a tag h1 com o texto TrybeTrip - Agência de Viagens como filho da tag body;
 
       const body = document.querySelector('body');
       const h1DoBody = body.innerHTML = '<h1>TrybeTrip - Agência de Viagens</h1>'
 
+      /////////////////////////////////////////////////////////////
       //Adicione a tag main com a classe main-content como filho da tag body;
 
       const criaMain = document.createElement('main');
       criaMain.className = 'main-content'
       body.appendChild(criaMain);
        
+      /////////////////////////////////////////////////////////////
       //Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
 
       const main = document.querySelector('main');
@@ -80,6 +83,7 @@
       }
       criaTagsEClasses(main, 'section', 'center-content');
 
+      /////////////////////////////////////////////////////////////
       //Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
 
       const section = document.querySelector('section');
@@ -88,14 +92,17 @@
       criaParagrafo.innerText = 'Espero concluir esse exercício antes da aula ao vivo'
       section.appendChild(criaParagrafo);
       
+      /////////////////////////////////////////////////////////////
       //Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
 
       criaTagsEClasses(main, 'section', 'left-content');
 
+      /////////////////////////////////////////////////////////////
       //Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
 
       criaTagsEClasses(main, 'section', 'right-content');
 
+      /////////////////////////////////////////////////////////////
       //Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5;
 
       const segundaSection = document.querySelector('.left-content');
@@ -104,6 +111,7 @@
       criaImg.src = 'https://picsum.photos/200'
       segundaSection.appendChild(criaImg);
 
+      /////////////////////////////////////////////////////////////
       //Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, … como valores da lista. Essa lista deve ser filha do section criado no passo 6;
 
       const terceiraSection = document.querySelector('.right-content');
@@ -121,6 +129,7 @@
       }
       lista()
 
+      /////////////////////////////////////////////////////////////
       //Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
 
       const criaH3 = (elementoPai, elemento) => {
@@ -132,11 +141,13 @@
       }
       criaH3(main, 'h3');
 
+      /////////////////////////////////////////////////////////////
       //Adicione a classe title na tag h1 criada;
 
       const h1 = body.firstElementChild;
       h1.className = "title";
 
+      /////////////////////////////////////////////////////////////
       //Adicione a classe description nas 3 tags h3 criadas;
 
       const ultimoH3 = main.lastElementChild;
@@ -148,18 +159,22 @@
             arrayH3[index].className = "description"
         }
 
+      /////////////////////////////////////////////////////////////
       //Remova a section criada no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild();
 
       main.removeChild(segundaSection);
 
+      /////////////////////////////////////////////////////////////
       //Centralize a section criada no passo 6 (aquele que possui a classe right-content).
 
       terceiraSection.style.marginRight = "auto";
 
+      /////////////////////////////////////////////////////////////
       //Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
 
       section.parentElement.style.backgroundColor = 'pink';
 
+      /////////////////////////////////////////////////////////////
       //Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
 
       const ul = document.querySelector('ul');
