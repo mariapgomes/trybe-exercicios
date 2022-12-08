@@ -57,9 +57,17 @@
   </head>
   <body>
     <script>
+      //Adicione a tag h1 com o texto TrybeTrip - Agência de Viagens como filho da tag body;
+
       const body = document.querySelector('body');
       const h1DoBody = body.innerHTML = '<h1>TrybeTrip - Agência de Viagens</h1>'
-      
+
+      //Adicione a tag main com a classe main-content como filho da tag body;
+
+      const main = document.createElement('main');
+      main.className = 'main-content'
+      body.appendChild(main);
+       
 
     </script>
   </body>
