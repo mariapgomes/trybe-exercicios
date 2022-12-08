@@ -96,6 +96,14 @@
 
       criaTagsEClasses(main, 'section', 'right-content');
 
+      //Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5;
+
+      const segundaSection = document.querySelector('.left-content')
+
+      const criaImg = document.createElement('img');
+      criaImg.src = 'https://picsum.photos/200'
+      segundaSection.appendChild(criaImg);
+
     </script>
   </body>
 </html>
