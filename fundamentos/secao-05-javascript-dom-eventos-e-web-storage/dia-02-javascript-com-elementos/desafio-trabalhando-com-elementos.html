@@ -137,6 +137,17 @@
       const h1 = body.firstElementChild;
       h1.className = "title";
 
+      //Adicione a classe description nas 3 tags h3 criadas;
+
+      const ultimoH3 = main.lastElementChild;
+      const penultimoH3 = ultimoH3.previousElementSibling;
+      const antipenultimoH3 = penultimoH3.previousElementSibling;
+      const arrayH3 = [ultimoH3, penultimoH3, antipenultimoH3]
+
+      for (let index = 0; index < arrayH3.length; index += 1){
+            arrayH3[index].className = "description"
+        }
+
     </script>
   </body>
 </html>
