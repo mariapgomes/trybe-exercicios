@@ -165,3 +165,92 @@ function fizzBuzz(arrayNumber) {
     } return arrString;
 }
 console.log(fizzBuzz([2, 15, 7, 9, 45]));
+
+/////////////////////////////////////////////////////////////
+
+// 9 - Crie uma função que cofifique e decodifique.
+
+// Para codificar a frase utilize a função encode que recebe uma string como parâmetro e deve trocar todas as vogais minúsculas por números , de acordo com o formato:
+
+// a -> 1
+// e -> 2
+// i -> 3
+// o -> 4
+// u -> 5
+
+function encode(stringCode) {
+    let stringCodificada = [];
+
+    for (let valor of stringCode) {
+        switch (valor) {
+            case 'a':
+                stringCodificada.push(valor = 1);
+                break;
+
+            case 'e':
+                stringCodificada.push(valor = 2);
+                break;
+
+            case 'i':
+                stringCodificada.push(valor = 3);
+                break;
+
+            case 'o':
+                stringCodificada.push(valor = 4);
+                break;
+
+            case 'u':
+                stringCodificada.push(valor = 5);
+                break;
+
+            default:
+                stringCodificada.push(valor);
+        }
+
+    }
+    return stringCodificada.join('');
+}
+console.log(encode('This is an ecoding test'));
+
+//------------------------------------------------
+// Para decodificar a frase, utilize a função decodeque recebe uma string contendo letras e números como Meter e deverá trocar todos os números por vogais minúsculos , de acordo com o formato:
+
+// 1 -> a
+// 2 -> e
+// 3 -> i
+// 4 -> o
+// 5 -> u
+
+function decode(stringDecode) {
+    let stringDecodificada = [];
+
+    for (let valor of stringDecode) {
+        switch (valor) {
+            case '1':
+                stringDecodificada.push(valor = 'a');
+                break;
+
+            case '2':
+                stringDecodificada.push(valor = 'e');
+                break;
+
+            case '3':
+                stringDecodificada.push(valor = 'i');
+                break;
+
+            case '4':
+                stringDecodificada.push(valor = 'o');
+                break;
+
+            case '5':
+                stringDecodificada.push(valor = 'u');
+                break;
+
+            default:
+                stringDecodificada.push(valor);
+        }
+
+    }
+    return stringDecodificada.join('');
+}
+console.log(decode('Th3s 3s 1n 2c4d3ng t2st'));
