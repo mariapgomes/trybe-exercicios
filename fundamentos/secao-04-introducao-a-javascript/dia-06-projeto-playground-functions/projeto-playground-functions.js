@@ -14,10 +14,10 @@ function compareTrue(animalUm, animalDois) {
     const elefante = true;
     const macaco = false;
     if (animalUm === 'girafa' && animalDois === 'elefante') {
-      return true;
+        return true;
     }
     return false
-  
+
 }
 console.log(compareTrue('girafa', 'girafa'));
 
@@ -70,23 +70,23 @@ console.log(footballPoints(14, 8));
 function highestCount(arrayNumeros) {
     let maiorNumero = 0;
     let contador = 0;
-  
+
     for (let valor of arrayNumeros) {
-      if (valor === maiorNumero) {
-        maiorNumero = valor;
-        contador += 1;
-      } else if (valor > maiorNumero) {
-        maiorNumero = valor;
-        contador = 0;
-        contador += 1;
-      } else if (valor < 0) {
-        maiorNumero = valor;
-        contador = 0;
-        contador += 1;
-      }
+        if (valor === maiorNumero) {
+            maiorNumero = valor;
+            contador += 1;
+        } else if (valor > maiorNumero) {
+            maiorNumero = valor;
+            contador = 0;
+            contador += 1;
+        } else if (valor < 0) {
+            maiorNumero = valor;
+            contador = 0;
+            contador += 1;
+        }
     }
     return contador;
-  }
+}
 console.log(highestCount([-2, -2, -1, -1, -1]));
 
 /////////////////////////////////////////////////////////////
@@ -272,14 +272,66 @@ console.log(decode('Th3s 3s 1n 2c4d3ng t2st'));
 function techList(arrayTech, nome) {
     let tecnologias = [];
     let arrayOrdenado = arrayTech.sort();
-  
+
     for (valor of arrayOrdenado) {
-      if (arrayTech == []) {
-        return tecnologias = [];
-      }
+        if (arrayTech == []) {
+            return tecnologias = [];
+        }
         tecnologias.push({ tech: valor, name: nome })
-      
+
     }
     return tecnologias;
-  }
-  console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
+}
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
+
+/////////////////////////////////////////////////////////////
+
+// 11 - Crie uma função de numero de telefone.
+
+//Implemente a função generatePhoneNumberque recebe um array com 11 números e retorna um número de telefone, respeitando parênteses, traços e espaços.
+
+// Caso o parâmetro da função seja [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1], a função generatePhoneNumberdeverá retornar (12) 34567-8901.
+
+// Retorne uma string 'Array com tamanho incorreto.'se a função receber um array com tamanho diferente de 11;
+
+// Retorne a string 'não é possível gerar um número de telefone com esses valores'caso algum dos números do array seja menor que 0, maior que 9 ou se repita 3 vezes ou mais.
+
+function generatePhoneNumber(arrayNumber) {
+    let ddd = [];
+    let primeirosCinco = [];
+    let ultimosQuatro = [];
+    let contador = 0;
+
+    if (arrayNumber.length == 11) {
+        for (let valor of arrayNumber) {
+            for (let valor2 of arrayNumber) {
+
+                if (valor === valor2) {
+                    contador += 1;
+
+                }
+                if (valor < 0 || valor > 9 || contador >= 3) {
+                    return 'Não é possível gerar um número de telefone com esses valores';
+
+                }
+
+            } contador = 0;
+
+            if (ddd.length <= [1]) {
+                ddd.push(valor)
+
+            } else if (primeirosCinco.length <= [4]) {
+                primeirosCinco.push(valor)
+
+            } else {
+                ultimosQuatro.push(valor)
+            }
+        }
+    } else {
+        return `Array com tamanho incorreto.`;
+
+    }
+
+    return `(${ddd.join('')}) ${primeirosCinco.join('')}-${ultimosQuatro.join('')}`;
+}
+console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
