@@ -137,3 +137,31 @@ function catAndMouse(mouse, cat1, cat2) {
     }
 }
 console.log(catAndMouse(10, 6, 7));
+
+/////////////////////////////////////////////////////////////
+
+// 8 - Crie uma função FizzBuzz.
+
+// A função fizzBuzzrecebe um array de números e para cada número do array é realizada a divisão por 3 e por 5 e de acordo com o resultado, a função deve retornar um array de strings:
+
+// Retorne uma string 'fizz'para cada número do array que seja divisível apenas por 3;
+// Retorne uma string 'buzz'para cada número do array que seja divisível apenas por 5;
+// Retorne uma string 'fizzBuzz'para cada número do array que seja divisível por 3 e 5;
+// Retorne uma string 'bug!'para cada número do array que não seja dividido por 3 nem por 5.
+
+function fizzBuzz(arrayNumber) {
+    let arrString = [];
+
+    for (let valor of arrayNumber) {
+        if (valor % 3 === 0 && valor % 5 === 0) {
+            arrString.push('fizzBuzz')
+        } else if (valor % 5 === 0) {
+            arrString.push('buzz')
+        } else if (valor % 3 === 0) {
+            arrString.push('fizz')
+        } else {
+            arrString.push('bug!')
+        }
+    } return arrString;
+}
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
