@@ -88,3 +88,33 @@ function highestCount(arrayNumeros) {
     return contador;
   }
 console.log(highestCount([-2, -2, -1, -1, -1]));
+
+/////////////////////////////////////////////////////////////
+
+// 6 - Crie 3 funções para calcular a área de um triêngulo e de um retângulo.
+
+//A função calcTriangleArea recebe dois parâmetros, sendo eles, o valor da base (base) e outro da altura (height) de um triângulo qualquer e retorna o calculador da sua área.
+
+const calcTriangleArea = (base, height) => (base * height) / 2;
+
+console.log(calcTriangleArea(10, 50));
+
+//-----------------------------------
+// A função calcRectangleAreatambém recebe 2 parâmetros, sendo eles, o valor da base ( base) e outro da altura ( height) de um retângulo qualquer e retorna o calculador da sua área.
+
+const calcRectangleArea = (base, height) => base * height;
+
+console.log(calcRectangleArea(10, 50));
+
+//-----------------------------------
+//E, por último, a função calcAllAreasque recebe 3 parâmetros sendo eles, o valor da base ( base), o valor da altura ( height) e a forma solicitada ( form) que eu quero obter o valor da área, podendo ser triânguloou retângulo.
+
+function calcAllAreas(base, height, form) {
+    if (form === 'triângulo') {
+        return `O valor da área do triângulo é de: ${calcTriangleArea(base, height)}`;
+    } else if (form === 'retângulo') {
+        return `O valor da área do retângulo é de: ${calcRectangleArea(base, height)}`;
+    }
+    return `Não foi possível fazer o cálculo, insira uma forma geométrica válida.`;
+}
+console.log(calcAllAreas(10, 50, 'retângulo'));
