@@ -21,5 +21,16 @@ function compareTrue(animalUm, animalDois) {
 }
 console.log(compareTrue('girafa', 'girafa'));
 
+/////////////////////////////////////////////////////////////
 
+// 2- Crie uma função que divida uma frase.
+
+//A função `splitSentence` recebe uma string como parâmetro e deve retornar um array com as palavras separadas por vírgula.
+//Exemplo: se a função receber uma string 'go Trybe', o retorno deve ser ['go', 'Trybe'].
+
+function splitSentence(string) {
+    let stringArray = string.split(' ');
+    return stringArray;
+}
+console.log(splitSentence('go trybe'))
 
