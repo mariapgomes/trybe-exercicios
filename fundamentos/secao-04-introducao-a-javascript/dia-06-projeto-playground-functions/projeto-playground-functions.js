@@ -275,7 +275,7 @@ function techList(arrayTech, nome) {
 
     for (valor of arrayOrdenado) {
         if (arrayTech == []) {
-            return tecnologias = [];
+            return tecnologias;
         }
         tecnologias.push({ tech: valor, name: nome })
 
@@ -335,3 +335,68 @@ function generatePhoneNumber(arrayNumber) {
     return `(${ddd.join('')}) ${primeirosCinco.join('')}-${ultimosQuatro.join('')}`;
 }
 console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1]));
+
+/////////////////////////////////////////////////////////////
+
+// 12 - Cria uma funçãode boas vindas ao bar da trybe.
+
+// Implemente a função hydrateque recebe uma string e retorna a sugestão de quantos copos de água você deve beber.
+
+// Para simplificar, considere que a string sempre terá o formato quantidade (em número) + tipo da bebida ;
+
+// O número na frente de cada bebida deve estar entre 1 e 9.
+
+function hydrate(pedido) {
+    let numero = pedido.replace(/[^1-9]/g, '');
+    let somaCopos = 0;
+    let primeiroNumero = [];
+    let segundoNumero = [];
+    let terceiroNumero = [];
+    let singularCachaca = 'cachaça';
+    let singularCerveja = 'cerveja';
+    let singularVinho = 'copo de vinho';
+    let respostaPlural = 'copos de água';
+    
+
+    for (let valor of numero) {
+        somaCopos = (somaCopos + parseInt(valor));
+
+        if (primeiroNumero.length <= [0]) {
+            primeiroNumero.push(valor);
+
+            if (primeiroNumero > 1) {
+                singularCachaca = 'cachaças';
+
+            }
+
+        } else if (segundoNumero.length <= [0]) {
+            segundoNumero.push(valor);
+
+            if (segundoNumero > 1) {
+                singularCerveja = 'cervejas';
+
+            }
+
+        } else if (terceiroNumero.length <= [0]) {
+            terceiroNumero.push(valor);
+
+            if (terceiroNumero > 1) {
+                singularVinho = 'copos de vinho';
+
+            }
+        }
+    }
+
+    if (somaCopos == 1) {
+        respostaPlural = 'copo de água'
+    }
+
+    if (pedido == `${primeiroNumero} ${singularCerveja}` || `${primeiroNumero} ${singularCachaca}` || `${primeiroNumero} ${singularVinho}`) {
+        return `${somaCopos} ${respostaPlural}`;
+
+    } else if (pedido == `${primeiroNumero} ${singularCachaca}, ${segundoNumero} ${singularCerveja} e ${terceiroNumero} ${singularVinho}`) {
+        return `${somaCopos} ${respostaPlural}`;
+
+    }
+}
+console.log(hydrate('1 copo de vinho'));
