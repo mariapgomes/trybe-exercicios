@@ -45,3 +45,18 @@ function concatName(arrayString) {
     return strings;
 }
 console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
+
+/////////////////////////////////////////////////////////////
+
+// 4 - Crie uma função que calcule a quantidade de pontos em um campeonato de futebol.
+
+// A função footballPointsrecebe o número de vitórias ( wins) e o número de empates ( ties) e retorna a quantidade de pontos que o tempo marcou em um campeonato. Para isso, considere que:
+
+// wins: é o número de vitórias e vale 3 pontos;
+// ties: é o número de empates e vale 1 ponto.
+
+function footballPoints(wins, ties) {
+    let pontos = wins * 3 + ties;
+    return pontos;
+}
+console.log(footballPoints(14, 8));
