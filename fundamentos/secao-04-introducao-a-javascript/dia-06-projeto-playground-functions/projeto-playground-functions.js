@@ -254,3 +254,32 @@ function decode(stringDecode) {
     return stringDecodificada.join('');
 }
 console.log(decode('Th3s 3s 1n 2c4d3ng t2st'));
+
+/////////////////////////////////////////////////////////////
+
+// 10 - Crie uma função de lista de tecnologias.
+
+// A função techList recebe dois parâmetros:
+
+// Um array com nomes de tecnologias ;
+// Um nome referente ao nome de uma pessoa.
+
+// A função deverá retornar:
+
+// A função techListdeve retornar um array vazio quando a lista de tecnologias estiver vazia.
+// A função techListdeve retornar uma lista de objetos ordenados quando é passada uma lista com 5 tecnologias;
+
+function techList(arrayTech, nome) {
+    let tecnologias = [];
+    let arrayOrdenado = arrayTech.sort();
+  
+    for (valor of arrayOrdenado) {
+      if (arrayTech == []) {
+        return tecnologias = [];
+      }
+        tecnologias.push({ tech: valor, name: nome })
+      
+    }
+    return tecnologias;
+  }
+  console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
