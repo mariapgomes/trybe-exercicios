@@ -118,3 +118,22 @@ function calcAllAreas(base, height, form) {
     return `Não foi possível fazer o cálculo, insira uma forma geométrica válida.`;
 }
 console.log(calcAllAreas(10, 50, 'retângulo'));
+
+/////////////////////////////////////////////////////////////
+
+// 7 - Crie uma Função de Caça ao Rato.
+
+//Imagine que dois gatos estão caçando o mesmo rato. Você precisa verificar qual gato está mais perto de sua presa. Para isso, implemente a função `catAndMouse` que recebe 3 parâmetros do tipo `number`.
+
+//Calcule as distâncias entre o rato e cada um dos gatos e retorne qual dos felinos está mais próximo do rato:
+
+function catAndMouse(mouse, cat1, cat2) {
+    if (cat1 > cat2) {
+        return 'Cat1 está mais perto do rato';
+    } else if (cat2 > cat1) {
+        return 'Cat2 está mais perto do rato';
+    } else if (mouse > cat1 && mouse > cat2 && cat1 === cat2) {
+        return 'Os gatos trombam e o rato foge';
+    }
+}
+console.log(catAndMouse(10, 6, 7));
