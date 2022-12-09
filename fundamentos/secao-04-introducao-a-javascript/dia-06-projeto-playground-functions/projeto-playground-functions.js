@@ -34,3 +34,14 @@ function splitSentence(string) {
 }
 console.log(splitSentence('go trybe'))
 
+/////////////////////////////////////////////////////////////
+
+// 3- Crie uma função que use concatenação de strings.
+
+//A função `concatName` recebe um array de strings e deve retornar uma string com o formato `'ÚLTIMO ITEM, PRIMEIRO ITEM`, independente do tamanho do array.
+
+function concatName(arrayString) {
+    let strings = `${arrayString[arrayString.length - 1]}, ${arrayString[0]}`
+    return strings;
+}
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
