@@ -16,7 +16,7 @@ function compareTrue(animalUm, animalDois) {
     if (animalUm === 'girafa' && animalDois === 'elefante') {
         return true;
     }
-    return false
+    return false;
 
 }
 console.log(compareTrue('girafa', 'girafa'));
@@ -32,7 +32,7 @@ function splitSentence(string) {
     let stringArray = string.split(' ');
     return stringArray;
 }
-console.log(splitSentence('go trybe'))
+console.log(splitSentence('go trybe'));
 
 /////////////////////////////////////////////////////////////
 
@@ -154,13 +154,13 @@ function fizzBuzz(arrayNumber) {
 
     for (let valor of arrayNumber) {
         if (valor % 3 === 0 && valor % 5 === 0) {
-            arrString.push('fizzBuzz')
+            arrString.push('fizzBuzz');
         } else if (valor % 5 === 0) {
-            arrString.push('buzz')
+            arrString.push('buzz');
         } else if (valor % 3 === 0) {
-            arrString.push('fizz')
+            arrString.push('fizz');
         } else {
-            arrString.push('bug!')
+            arrString.push('bug!');
         }
     } return arrString;
 }
@@ -277,7 +277,7 @@ function techList(arrayTech, nome) {
         if (arrayTech == []) {
             return tecnologias;
         }
-        tecnologias.push({ tech: valor, name: nome })
+        tecnologias.push({ tech: valor, name: nome });
 
     }
     return tecnologias;
@@ -318,13 +318,13 @@ function generatePhoneNumber(arrayNumber) {
             } contador = 0;
 
             if (ddd.length <= [1]) {
-                ddd.push(valor)
+                ddd.push(valor);
 
             } else if (primeirosCinco.length <= [4]) {
-                primeirosCinco.push(valor)
+                primeirosCinco.push(valor);
 
             } else {
-                ultimosQuatro.push(valor)
+                ultimosQuatro.push(valor);
             }
         }
     } else {
@@ -388,7 +388,7 @@ function hydrate(pedido) {
     }
 
     if (somaCopos == 1) {
-        respostaPlural = 'copo de água'
+        respostaPlural = 'copo de água';
     }
 
     if (pedido == `${primeiroNumero} ${singularCerveja}` || `${primeiroNumero} ${singularCachaca}` || `${primeiroNumero} ${singularVinho}`) {
