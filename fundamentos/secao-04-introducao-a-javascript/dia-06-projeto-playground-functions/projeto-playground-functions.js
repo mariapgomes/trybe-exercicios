@@ -50,7 +50,7 @@ console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // 4 - Crie uma função que calcule a quantidade de pontos em um campeonato de futebol.
 
-// A função footballPointsrecebe o número de vitórias ( wins) e o número de empates ( ties) e retorna a quantidade de pontos que o tempo marcou em um campeonato. Para isso, considere que:
+// A função footballPoints recebe o número de vitórias ( wins) e o número de empates ( ties) e retorna a quantidade de pontos que o tempo marcou em um campeonato. Para isso, considere que:
 
 // wins: é o número de vitórias e vale 3 pontos;
 // ties: é o número de empates e vale 1 ponto.
@@ -60,3 +60,31 @@ function footballPoints(wins, ties) {
     return pontos;
 }
 console.log(footballPoints(14, 8));
+
+/////////////////////////////////////////////////////////////
+
+// 5 - Crie uma função que calcula o número de repetiçãoes do maior número.
+
+//A função highestCountdeve retornar a quantidade de vezes que o número MAIOR se repete dentro do array.
+
+function highestCount(arrayNumeros) {
+    let maiorNumero = 0;
+    let contador = 0;
+  
+    for (let valor of arrayNumeros) {
+      if (valor === maiorNumero) {
+        maiorNumero = valor;
+        contador += 1;
+      } else if (valor > maiorNumero) {
+        maiorNumero = valor;
+        contador = 0;
+        contador += 1;
+      } else if (valor < 0) {
+        maiorNumero = valor;
+        contador = 0;
+        contador += 1;
+      }
+    }
+    return contador;
+  }
+console.log(highestCount([-2, -2, -1, -1, -1]));
