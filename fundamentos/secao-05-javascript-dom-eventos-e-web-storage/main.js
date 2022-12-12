@@ -37,16 +37,19 @@ input.addEventListener('keyup', alteraTexto);
 // - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele redirecione para alguma página;
 //  - Que tal redirecionar para seu portfólio?
 
+myWebpage.addEventListener('dblclick', () => {
+    window.location.assign('https://mariapgomes.github.io/#Blog');
+});
 
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
 
-myWebpage.addEventListener('mouseover', () => {
-    myWebpage.style.color = 'red'
+myWebpage.addEventListener('mouseover', (event) => {
+    event.target.style.color = 'red';
 })
 
-myWebpage.addEventListener('mouseleave', () => {
-    myWebpage.style.color = 'white'
+myWebpage.addEventListener('mouseleave', (event) => {
+    event.target.style.color = 'white'
 })
 // Segue abaixo um exemplo do uso de event.target:
 
@@ -60,6 +63,4 @@ function resetText(event) {
 
 firstLi.addEventListener('dblclick', resetText);
 
-// Não precisa passar o parâmetro dentro da callback resetText. O próprio
-// navegador fará esse trabalho por você, não é legal? Desse jeito, o
-// event.target na nossa função retornará o objeto 'firstLi'.
+// Não precisa passar o parâmetro dentro da callback resetText. O próprio navegador fará esse trabalho por você, não é legal? Desse jeito, o event.target na nossa função retornará o objeto 'firstLi'.
