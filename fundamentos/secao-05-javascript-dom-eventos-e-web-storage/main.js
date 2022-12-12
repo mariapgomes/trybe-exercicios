@@ -33,25 +33,29 @@ const alteraTexto = (event) => {
     techElement.innerText = event.target.value;
 }
 input.addEventListener('keyup', alteraTexto);
-
   
-
-  
-// - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
-// redirecione para alguma página;
+// - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele redirecione para alguma página;
 //  - Que tal redirecionar para seu portfólio?
+
 
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
 
+myWebpage.addEventListener('mouseover', () => {
+    myWebpage.style.color = 'red'
+})
+
+myWebpage.addEventListener('mouseleave', () => {
+    myWebpage.style.color = 'white'
+})
 // Segue abaixo um exemplo do uso de event.target:
 
 
-const resetText = (event) => {
-  // O Event é passado como um parâmetro para a função.
-  event.target.innerText = 'Opção reiniciada';
-  // O event possui várias propriedades, porém a mais usada é o event.target,
-  // que retorna o objeto que disparou o evento.
+function resetText(event) {
+    // O Event é passado como um parâmetro para a função.
+    event.target.innerText = 'Opção reiniciada';
+    // O event possui várias propriedades, porém a mais usada é o event.target,
+    // que retorna o objeto que disparou o evento.
 }
 
 firstLi.addEventListener('dblclick', resetText);
